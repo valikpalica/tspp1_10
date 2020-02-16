@@ -1,50 +1,48 @@
-let first = 0;
-let second = 0;
-function plus() {
-    getElementBuId();
-    if ((isNaN(first) || isNaN(second) != false)) {
-        let rez = Number(first) + Number(second);
-        console.log(rez);
-        writeInDocument(rez);
-    }
-}
+function plus(x, y) {
 
-function minus() {
-    getElementBuId();
-    if ((isNaN(first) && isNaN(second) !== NaN)) {
-        let rez = first - second;
-        writeInDocument(rez);
-    } else {
+    if ((isNaN(x) || isNaN(y))) {
         console.log(NaN);
-    }
-}
-
-function mnog() {
-    getElementBuId();
-    if ((isNaN(first) && isNaN(second) !== NaN)) {
-        let rez = first * second;
-        writeInDocument(rez);
     } else {
-        console.log(NaN);
-    }
-}
-
-function deli() {
-    getElementBuId();
-    if ((isNaN(first) && isNaN(second) !== NaN)) {
-        let rez = first / second;
+        let rez = x + y;
         writeInDocument(rez);
-    } else {
-        console.log(NaN);
     }
 }
 
-function getElementBuId() {
-    first = Number(document.getElementById("first_element"));
-    second = Number(document.getElementById("second_element"));
+function minus(x, y) {
 
-
+    if ((isNaN(x) || isNaN(y))) {
+        console.log(NaN);
+    } else {
+        let rez = x - y;
+        writeInDocument(rez);
+    }
 }
+
+function mnog(x, y) {
+
+    if ((isNaN(x) || isNaN(y))) {
+        console.log(NaN);
+    } else {
+        let rez = x * y;
+        writeInDocument(rez);
+
+    }
+}
+
+function deli(x, y) {
+
+    if ((isNaN(x) || isNaN(y))) {
+        console.log(NaN);
+    } else {
+        if (y === 0) {
+            alert('на ноль делить нельзя');
+        } else {
+            let rez = x / y;
+            writeInDocument(rez);
+        }
+    }
+}
+
 
 function writeInDocument(text) {
     document.getElementById('result').innerHTML = text;

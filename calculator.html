@@ -18,13 +18,13 @@
 
     </div>
     <div style="float: left">
-        <button style="width: 25px; height: 25px; margin: 5px" onclick="plus()">+</button>
+        <button style="width: 25px; height: 25px; margin: 5px" onclick="plus(Number(document.getElementById('first_element').value),Number(document.getElementById('second_element').value))">+</button>
         <br>
-        <button style="width: 25px; height: 25px;margin: 5px" onclick="minus()">-</button>
+        <button style="width: 25px; height: 25px;margin: 5px" onclick="minus(Number(document.getElementById('first_element').value),Number(document.getElementById('second_element').value))">-</button>
         <br>
-        <button style="width: 25px; height: 25px;margin: 5px" onclick="deli()">/</button>
+        <button style="width: 25px; height: 25px;margin: 5px" onclick="deli(Number(document.getElementById('first_element').value),Number(document.getElementById('second_element').value))">/</button>
         <br>
-        <button style="width: 25px; height: 25px;margin: 5px" onclick="mnog()">*</button>
+        <button style="width: 25px; height: 25px;margin: 5px" onclick="mnog(Number(document.getElementById('first_element').value),Number(document.getElementById('second_element').value))">*</button>
         <br>
 
     </div>
